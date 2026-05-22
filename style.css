@@ -1,0 +1,105 @@
+/* 1. THE FOUNDATION */
+html {
+    font-size: 22px;
+    box-sizing: border-box;
+    background-color: #f4f4f9; /* Adds a soft grey background outside the main page */
+}
+
+/* This is the most important rule in CSS: It forces padding and borders to be calculated INSIDE the element's width */
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+
+/* 2. THE MAIN CONTAINER */
+body {
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem; /* Increased padding for more breathing room */
+    background-color: #ffffff; /* Pure white for the reading area */
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* Adds a very subtle 3D shadow effect */
+    font-family: system-ui, -apple-system, sans-serif; /* Switches to a clean, modern font */
+    line-height: 1.6; /* Makes paragraphs significantly easier to read */
+    color: #333333;
+}
+
+/* 3. TYPOGRAPHY & LINKS */
+h1, h2, h3 {
+    color: #1a1a1a;
+    border-bottom: 2px solid #f4f4f9; /* Adds a subtle underline to headers */
+    padding-bottom: 0.5rem;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 4. TABLE UPGRADES */
+table {
+    width: 100%; /* Forces the table to expand to the edges */
+    border-collapse: collapse; /* Merges double borders into a single clean line */
+    margin: 1.5rem 0;
+}
+
+th, td, caption {
+    border: 1px solid #dddddd;
+    padding: 0.75rem;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace; /* Keeps the "receipt/menu" vibe for the table only */
+}
+
+th {
+    background-color: #f8f9fa; /* Gives headers a light grey background so they stand out */
+}
+
+/* 5. FORM POLISH */
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 8px; /* Softly rounds the corners of the box */
+    padding: 1.5rem;
+    background-color: #fafafa;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+input, textarea {
+    width: 100%; /* Forces text boxes to fill the available space */
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+/* 6. BUTTONS */
+button {
+    background-color: #007bff; /* A standard, professional interactive blue */
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="reset"] {
+    background-color: #6c757d; /* A muted grey for the secondary "Reset" action */
+}
+
+button:hover {
+    opacity: 0.9; /* Gives visual feedback when the mouse is over the button */
+}
